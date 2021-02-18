@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import React from 'react';
 import PreviewCompatibleImage from '../../components/PreviewCompatibleImage';
 import { Row, Col } from 'react-bootstrap';
@@ -23,6 +24,15 @@ const ProceduresGrid = ({ gridItems }) => {
       ))}
     </Row>
   );
+};
+
+ProceduresGrid.propTypes = {
+  gridItems: PropTypes.arrayOf(
+    PropTypes.shape({
+      image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
+      text: PropTypes.string,
+    })
+  ),
 };
 
 export default ProceduresGrid;

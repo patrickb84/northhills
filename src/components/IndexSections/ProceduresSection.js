@@ -1,3 +1,4 @@
+import PropTypes from "prop-types";
 import { Link } from 'gatsby';
 import React from 'react';
 import { Container } from 'react-bootstrap';
@@ -25,5 +26,17 @@ const ProceduresSection = ({ mainpitch, heading, description, intro }) => {
     </section>
   );
 };
+
+// ProceduresSection.propTypes = {
+//   description: PropTypes.string,
+//   heading: PropTypes.string,
+//   intro: PropTypes.shape({
+//     blurbs: PropTypes.oneOfType()
+//   }),
+//   mainpitch: PropTypes.shape({
+//     description: PropTypes.any,
+//     title: PropTypes.any
+//   })
+// }
 
 export default ProceduresSection;

@@ -14,16 +14,16 @@ description: >-
   Lorem ipsum essential the before times what day is it?. Toilet paper super-spreader event ballot whipped coffee staycation. Doomscrolling Zoom call Last Dance social distancing whipped coffee Tiger King spread. Second wave essential walktail. Wash hands at least 6 feet disinfect zoombomb trying times spread pandemic. Pandemic into quarantine UFO doggface208 mask postponed. You're on mute. press conference doomscroll Joe Exotic Coronavirus Netflix Blursday.
 intro:
   blurbs:
-    - image: /img/icons/cosmetic.png
+    - image: ../img/icons/cosmetic.png
       text: >
         Cosmetic
-    - image: /img/icons/family.png
+    - image: ../img/icons/family.png
       text: >
         Family Dentistry
-    - image: /img/icons/invisalign.png
+    - image: ../img/icons/invisalign.png
       text: >
         Invisalign®
-    - image: /img/icons/laser.png
+    - image: ../img/icons/laser.png
       text: >
         Laser Dentistry
   heading: Intro Section Heading
