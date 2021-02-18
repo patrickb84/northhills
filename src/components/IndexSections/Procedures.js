@@ -1,0 +1,28 @@
+import React from 'react';
+import PreviewCompatibleImage from '../../components/PreviewCompatibleImage';
+import { Row, Col } from 'react-bootstrap';
+
+const ProceduresGrid = ({ gridItems }) => {
+  console.log(gridItems);
+  return (
+    <Row>
+      {gridItems.map(item => (
+        <Col key={item.text} sm="6">
+          <section className="w-100 d-flex flex-column justify-content-center">
+            <div
+              className="mx-auto"
+              style={{
+                width: '240px',
+              }}
+            >
+              <PreviewCompatibleImage imageInfo={item} />
+            </div>
+            <p className="text-center">{item.text}</p>
+          </section>
+        </Col>
+      ))}
+    </Row>
+  );
+};
+
+export default ProceduresGrid;

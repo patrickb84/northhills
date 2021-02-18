@@ -1,0 +1,26 @@
+// Custom Bootstrap 4.5
+
+// @import 'functions';
+// @import 'variables';
+
+$mountain-blue: #2d6b8e;
+$fog-gray: #59585a;
+$light: #dee2e6;
+$dark: #212529;
+$mid: #adb5bd;
+
+$theme-colors: (
+  'primary': $mountain-blue,
+  'secondary': $fog-gray,
+  'white': #fff,
+  'mid': $mid,
+  'black': #000,
+  'gray-100': #f8f9fa,
+  'gray-200': #e9ecef,
+);
+
+$enable-responsive-font-sizes: true;
+// $enable-gradients: true;
+$enable-shadows: true;
+
+@import './bootstrap@4.6/bootstrap.scss';

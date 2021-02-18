@@ -1,0 +1,199 @@
+@import 'custom';
+@import 'responsive';
+@import 'fonts';
+@import 'animate';
+
+html,
+body {
+  @include respond-above(lg) {
+    font-size: 18px;
+  }
+}
+
+.border-thin-white {
+  border: 1px solid white;
+}
+
+.single-line {
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.text-shadow-1 {
+  text-shadow: 1px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.carousel-control-next,
+.carousel-control-prev {
+  background-image: none !important;
+}
+
+.testimonial__section {
+  height: 100vh;
+  @include respond-above(md) {
+    height: 60vh;
+  }
+  @include respond-above(lg) {
+    height: 75vh;
+  }
+}
+
+.map__container {
+  height: 75vh;
+  width: 100%;
+
+  @include respond-above(md) {
+    height: 40vh;
+  }
+  @include respond-above(md) {
+    height: 50vh;
+  }
+}
+
+.subscribe__form {
+  & > input.form-control {
+    border: none !important;
+    border-radius: 0 !important;
+    border-bottom: 1px solid white !important;
+    background-color: transparent;
+    color: white;
+    &::placeholder {
+      color: white;
+    }
+    padding-left: 0px;
+    font-size: 18px;
+  }
+  & .subscribe__submit {
+    background: none !important;
+    border-radius: 0 !important;
+    border: none !important;
+    border-bottom: 1px solid white !important;
+    color: white;
+    font-weight: bold;
+  }
+}
+
+.header__section {
+  // @include respond-above(lg) {
+  //   position: relative;
+
+  //   .header__logo {
+  //     position: absolute;
+  //     bottom: 50px;
+  //     right: 50px;
+  //     width: 500px;
+  //   }
+  // }
+  .header__logo {
+    filter: drop-shadow(1px 8px 5px rgba(0, 0, 0, 0.7));
+  }
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.bg-primary-gradient {
+  background: rgb(34, 81, 109);
+  background: linear-gradient(
+    42deg,
+    rgba(34, 81, 109, 1) 18%,
+    rgba(45, 107, 142, 1) 38%,
+    rgba(54, 123, 162, 1) 62%,
+    rgba(45, 107, 142, 1) 100%
+  );
+}
+
+.bg-black-gradient {
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 1) 6%,
+    rgba(35, 35, 35, 1) 32%,
+    rgba(16, 16, 16, 1) 50%,
+    rgba(16, 16, 16, 1) 66%,
+    rgba(40, 40, 40, 1) 80%,
+    rgba(1, 1, 1, 1) 95%
+  );
+}
+
+// tachyons
+.tracked {
+  letter-spacing: 0.1em;
+}
+.tracked-tight {
+  letter-spacing: -0.05em;
+}
+.tracked-mega {
+  letter-spacing: 0.25em;
+}
+
+.fw-100 {
+  font-weight: 100;
+}
+.fw-200 {
+  font-weight: 200;
+}
+.fw-300 {
+  font-weight: 300;
+}
+.fw-400 {
+  font-weight: 400;
+}
+.fw-500 {
+  font-weight: 500;
+}
+.fw-600 {
+  font-weight: 600;
+}
+.fw-700 {
+  font-weight: 700;
+}
+.fw-800 {
+  font-weight: 800;
+}
+.fw-900 {
+  font-weight: 900;
+}
+
+.main-navbar .nav-link {
+  color: white !important;
+}
+
+.drop-shadow-1 {
+  filter: 1px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.nav--white {
+  & > .nav-link {
+    color: white !important;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.h-100 {
+  height: 100%;
+}
+
+.index__header {
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+
+  h1,
+  h2,
+  p {
+    color: white;
+    text-shadow: 1px 4px 8px rgba(0, 0, 0, 0.2);
+  }
+
+  button {
+    letter-spacing: 0.1em;
+    border-radius: 0;
+    width: 320px;
+  }
+}
