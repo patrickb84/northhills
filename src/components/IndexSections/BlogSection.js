@@ -5,15 +5,13 @@ import BlogRoll from '../BlogRoll';
 
 const BlogSection = () => {
   return (
-    <section className="bg-danger py-8">
+    <section className="bg-light py-8">
       <Container>
-        <div className="column is-12">
-          <h3 className="has-text-weight-semibold is-size-2">Latest stories</h3>
+        <div>
+          <h2 className="tracked-mega text-primary text-center mb-6">LATEST STORIES</h2>
           <BlogRoll />
-          <div className="column is-12 has-text-centered">
-            <Link className="btn" to="/blog">
-              Read more
-            </Link>
+          <div className="text-center">
+            <Link className="btn btn-primary btn-round py-2 px-6 tracked">Read more</Link>
           </div>
         </div>
       </Container>

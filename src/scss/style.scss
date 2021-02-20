@@ -197,3 +197,15 @@ body {
     width: 320px;
   }
 }
+
+.hover-shadow {
+  transition: 0.2s;
+
+  &:hover {
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+  }
+}
+
+.btn-round {
+  border-radius: 100px !important;
+}

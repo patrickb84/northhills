@@ -1,23 +1,30 @@
-import PropTypes from "prop-types";
 import { Link } from 'gatsby';
 import React from 'react';
 import { Container } from 'react-bootstrap';
-import ProceduresGrid from '../IndexSections/Procedures';
+import ProceduresGrid from './ProceduresGrid';
 
-const ProceduresSection = ({ mainpitch, heading, description, intro }) => {
-  console.log(intro);
+const DATA = {
+  title: 'Services',
+  description:
+    'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed assumenda blanditiis doloribus?',
+};
+
+const ProceduresSection = () => {
   return (
     <section className="py-8">
-      <Container style={{ maxWidth: 1000 }}>
-        <h1 className="">{mainpitch.title}</h1>
-        <h3 className="">{mainpitch.description}</h3>
-        <h3 className="">{heading}</h3>
-        <p>{description}</p>
+      <Container>
+        <h2 className="text-center tracked-mega uppercase mb-4 text-primary">
+          {DATA.title}
+        </h2>
+        <p className="text-center lead text-muted">{DATA.description}</p>
 
-        <ProceduresGrid gridItems={intro.blurbs} />
+        <ProceduresGrid />
         <div>
           <div className="text-center pt-6">
-            <Link className="btn btn-primary px-6" to="/products">
+            <Link
+              className="btn btn-primary tracked py-2 btn-round px-7 shadow"
+              to="/products"
+            >
               View all procedures
             </Link>
           </div>
@@ -26,17 +33,5 @@ const ProceduresSection = ({ mainpitch, heading, description, intro }) => {
     </section>
   );
 };
-
-// ProceduresSection.propTypes = {
-//   description: PropTypes.string,
-//   heading: PropTypes.string,
-//   intro: PropTypes.shape({
-//     blurbs: PropTypes.oneOfType()
-//   }),
-//   mainpitch: PropTypes.shape({
-//     description: PropTypes.any,
-//     title: PropTypes.any
-//   })
-// }
 
 export default ProceduresSection;
